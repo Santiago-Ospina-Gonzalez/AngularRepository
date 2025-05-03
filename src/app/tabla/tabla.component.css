@@ -1,0 +1,82 @@
+/* Estilo para tabla interactiva y moderna */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    background-color: #f9fff9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #4caf50;
+    color: white;
+    text-align: left;
+}
+
+thead th {
+    padding: 12px 15px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e8f5e9;
+}
+
+tbody td {
+    padding: 12px 15px;
+    color: #333;
+}
+
+tbody td a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+tbody td a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para botón de contraer y ampliar la tabla */
+.toggle-button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #45a049;
+}
+
+.toggle-button:active {
+    background-color: #3e8e41;
+}
+h2{
+    color: #4caf50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    
+}
