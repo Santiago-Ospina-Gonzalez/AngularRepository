@@ -1,59 +1,54 @@
-# Angular17App
+# Angular 17 App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
+Este es un repositorio donde realizo pruebas para aprender Angular 17.
 
-## Development server
+## Requisitos previos
 
-To start a local development server, run:
+- Node.js (versión 16 o superior)
+- Angular CLI (versión 17 o superior)
 
+## Instalación
+
+1. Clona este repositorio:
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   cd angular-17-app
+   ```
+
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+
+## Ejecución del proyecto
+
+Para iniciar el servidor de desarrollo, ejecuta:
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+El proyecto estará disponible en `http://localhost:4200/`.
 
-## Code scaffolding
+## Generar una build
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+Para generar una build de producción, ejecuta:
 ```bash
-ng generate component component-name
+ng build --prod
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Los archivos generados estarán en el directorio `dist/`.
 
-```bash
-ng generate --help
-```
+## Estructura del proyecto
 
-## Building
+- `src/`: Contiene el código fuente del proyecto.
+- `dist/`: Contiene los archivos generados para producción.
+- `angular.json`: Configuración del proyecto Angular.
+- `package.json`: Dependencias y scripts del proyecto.
 
-To build the project run:
+## Contribuciones
 
-```bash
-ng build
-```
+Si deseas contribuir, por favor abre un issue o envía un pull request.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Licencia
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este proyecto está bajo la licencia [MIT](LICENSE).
