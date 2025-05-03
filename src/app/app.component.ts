@@ -17,6 +17,4 @@ export class AppComponent {
   city = 'Cali';
   country = 'Colombia';
   username = '';
-
-
 }
