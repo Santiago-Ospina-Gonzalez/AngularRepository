@@ -1,0 +1,12 @@
+<table>
+    <td>Id</td>
+    <td>Nombre</td>
+    <td>Descripcion</td>
+    @for(games of games; track games.id){
+        <tr>
+            <td>{{games.id}}</td>
+            <td>{{games.name}}</td>
+            <td>{{games.description}}</td>
+        </tr>
+    }
+</table>

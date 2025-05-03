@@ -1,0 +1,12 @@
+<table>
+    <td>Id</td>
+    <td>Nombre</td>
+    <td>Imagen</td>
+    @for(img of img; track img.id){
+        <tr>
+            <td>{{img.id}}</td>
+            <td>{{img.username}}</td>
+            <td><img src="{{img.img}}" alt="{{img.username}}" width="100" height="100"></td>
+        </tr>
+    }
+</table>
