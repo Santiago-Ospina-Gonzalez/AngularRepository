@@ -1,11 +1,7 @@
-<h1>Hola mundo desde {{city.toLowerCase()}} {{country.toUpperCase()}}</h1>
+<header>
+  
+<app-navbar [username]="username"></app-navbar>
+</header>
+<app-user (usernameChanged)="username = $event"></app-user>
+
 <router-outlet></router-outlet>
-
-<!-- Agregar el componente UserComponent -->
-<app-user></app-user>
-
-<!-- Agregar el componente GameComponent -->
-<app-game></app-game>
-
-<!-- Agregar el componente Prueba-Img -->
-<app-prueba-img></app-prueba-img>
