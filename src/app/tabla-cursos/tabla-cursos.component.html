@@ -1,0 +1,23 @@
+<table>
+  <thead>
+    <tr>
+      <th [attr.colspan]="titulos.length + 1">
+        <button class="toggle-button" (click)="toggleTabla()">
+          {{ tablaContraida ? 'Ampliar' : 'Contraer' }}
+        </button>
+      </th>
+    </tr>
+    <tr>
+      <th></th>
+      <th *ngFor="let titulo of titulos">{{ titulo }}</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="!tablaContraida">
+    <tr *ngFor="let fila of datos">
+      <td></td>
+      <td *ngFor="let titulo of titulos">
+        {{ fila[titulo] }}
+      </td>
+    </tr>
+  </tbody>
+</table>

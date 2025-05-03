@@ -1,20 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserComponent } from './user/user.component';
-import { GameComponent } from './game/game.component';
-import { PruebaImgComponent } from './prueba-img/prueba-img.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TablaCursosComponent } from './tabla-cursos/tabla-cursos.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, UserComponent,GameComponent,PruebaImgComponent,NavbarComponent],
+  imports: [RouterOutlet, UserComponent,NavbarComponent,TablaCursosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
   
 })
 export class AppComponent {
   title = 'angular-17-app';
-  city = 'Cali';
-  country = 'Colombia';
   username = '';
 }
