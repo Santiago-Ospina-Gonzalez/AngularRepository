@@ -41,7 +41,7 @@ export class TablaComponent {
       FechaCreacion: '2025-01-20'
     }
   ];
-  tablaContraida = false;
+  tablaContraida = true;
 
   toggleTabla() {
     this.tablaContraida = !this.tablaContraida;

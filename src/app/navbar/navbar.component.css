@@ -1,78 +1,52 @@
-/* navbar.component.css */
-.navbar {
+.menu-navbar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 128, 0, 0.5);
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    z-index: 1000;
+    width: 450px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: rgb(47, 190, 54);
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-    border-bottom: 3px solid #ffffff;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: #ffffff; /* Green color */
-    font-weight: bold;
-    margin: 0 1rem;
-    transition: color 0.3s ease;
+.menu-navbar.hidden {
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
 }
 
-.navbar a:hover {
-    color: #000000; 
+.menu-navbar.visible {
+    transform: translateY(0);
+    opacity: 1;
 }
 
-.navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.navbar .menu {
+.menu-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 1rem;
+    gap: 16px; 
+    flex: 1; 
 }
 
-.navbar .menu-item {
-    padding: 0.5rem 1rem;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.menu-navbar li {
+    margin: 0; 
 }
 
-.navbar .menu-item:hover {
-    background-color: #28a745;
-    color: white;
-}
-
-.navbar .welcome-text {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-left: 1rem;
+.menu-navbar a {
+    text-decoration: none;
     color: #ffffff;
-    pointer-events: none; 
+    font-weight: 500;
+    flex: 1; 
+    text-align: center; 
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-    }
-
-    .navbar .menu {
-        flex-direction: column;
-        gap: 0.5rem;
-        width: 100%;
-    }
-
-    .navbar .menu-item {
-        width: 100%;
-        text-align: center;
-    }
-
-    .navbar .welcome-text {
-        margin-bottom: 1rem;
-        font-size: 1rem;
-    }
+.menu-navbar a:hover {
+    color: #007bff;
 }
