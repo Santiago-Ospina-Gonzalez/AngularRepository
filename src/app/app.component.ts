@@ -17,22 +17,4 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'angular-17-app';
   username = '';
-
-  previousScrollPosition = 0;
-  isHeaderHidden = false;
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const currentScrollPosition = window.pageYOffset;
-
-    if (currentScrollPosition > this.previousScrollPosition && currentScrollPosition > 100) {
-      // Usuario está bajando
-      this.isHeaderHidden = true;
-    } else {
-      // Usuario está subiendo
-      this.isHeaderHidden = false;
-    }
-
-    this.previousScrollPosition = currentScrollPosition;
-  }
 }
