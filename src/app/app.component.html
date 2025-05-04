@@ -1,11 +1,10 @@
-<header>
+<header class="sticky-header" [ngClass]="{'hidden': isHeaderHidden}">
   <app-navbar [username]="username"></app-navbar>
 </header>
 
-<app-user (usernameChanged)="username = $event"></app-user>
-
-<app-formulario></app-formulario>
-
-<app-tabla></app-tabla>
-
-<router-outlet></router-outlet>
+<main>
+  <app-user (usernameChanged)="username = $event"></app-user>
+  <app-formulario></app-formulario>
+  <app-tabla></app-tabla>
+  <router-outlet></router-outlet>
+</main>

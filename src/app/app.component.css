@@ -1,6 +1,9 @@
 :root{
     color-scheme: light dark;
 }
+main {
+    margin-top: 60px; /* Igual a la altura del header */
+}
 
 h2{
     color: #4caf50;
@@ -10,4 +13,19 @@ h2{
     font-family: Arial, sans-serif;
     font-weight: bold;
     
+}
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: 60px; /* Define una altura fija */
+}
+
+.sticky-header.hidden {
+    transform: translateY(-100%); /* Mueve el header hacia arriba */
 }
