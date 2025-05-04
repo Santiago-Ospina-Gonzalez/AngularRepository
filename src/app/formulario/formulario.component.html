@@ -1,0 +1,12 @@
+<form class="formulario">
+    <h2>Formulario de {{titulo}}</h2>
+    <div class="campos">
+        <div *ngFor="let campo of campos; let i = index" class="campo">
+            <label for="nombre-{{i}}">{{campo.label}}:</label>
+            <input 
+                type="text" 
+                id="nombre-{{i}}" 
+                required>
+        </div>
+    </div>
+</form>
