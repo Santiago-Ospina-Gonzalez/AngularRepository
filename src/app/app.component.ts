@@ -17,4 +17,27 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'angular-17-app';
   username = '';
+  mostrarNavbar = true;
+  
+  scrollPosition = 0;
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    const currentScrollPosition = window.pageYOffset;
+
+    const header = document.querySelector('header'); // Selecciona el header
+    if (currentScrollPosition > this.scrollPosition) {
+      // Scroll hacia abajo
+      this.mostrarNavbar = false;
+      header?.classList.add('hidden');
+      header?.classList.remove('visible');
+    } else {
+      // Scroll hacia arriba
+      this.mostrarNavbar = true;
+      header?.classList.add('visible');
+      header?.classList.remove('hidden');
+    }
+
+    this.scrollPosition = currentScrollPosition;
+  }
 }
