@@ -1,9 +1,9 @@
 <header>
   <app-navbar [username]="username"></app-navbar>
+  <app-user (usernameChanged)="username = $event"></app-user>
 </header>
 
 <main>
-  <app-user (usernameChanged)="username = $event"></app-user>
   <app-formulario></app-formulario>
   <app-tabla></app-tabla>
   <router-outlet></router-outlet>

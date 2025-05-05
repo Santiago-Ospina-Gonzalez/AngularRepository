@@ -50,3 +50,38 @@
 .menu-navbar a:hover {
     color: #007bff;
 }
+
+.navbar-bienvenida {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 16px;
+    width: auto;
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    background-color: rgba(0, 128, 0, 0.5);
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-bienvenida img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navbar-bienvenida p {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 500; 
+    font-size: 16px; 
+    text-align: center;
+}
+
+.img-logo {
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px; 
+}
